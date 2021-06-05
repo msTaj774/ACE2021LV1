@@ -1,0 +1,39 @@
+/*The header style*/
+h1,h2,h3,h4{text-align: center;
+            color: darkgreen;}
+
+/*The paragraph style*/
+p{font-family: cursive;
+  font-size: 24px;
+  color: chocolate;}
+
+/*The body*/
+body{background-image: url(Background_5.JPG);
+     background-position: center;}
+
+/*The NavBar*/
+.topnav{overflow: hidden;
+        background-color: darkkhaki;
+        font-size: 18px;}
+
+/**/
+.topnav a{float: left;
+          display: block;
+          color: greenyellow;
+          text-align:center;
+          padding:14px 16px;
+          text-decoration:none;
+          margin-left:10px;}
+
+/*while hover*/
+.topnav a:hover{background-color: yellow;
+                color: black;}
+  
+/*ul inside the NavBar*/
+ul{list-style-type:none;
+   border:3px white outset;}
+
+/*the button*/
+button{font-size: 20px;
+       color: white;
+       background-color: tomato;}

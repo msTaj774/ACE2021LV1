@@ -1,0 +1,11 @@
+
+body {background-image:url('myImage4.gif');
+      background-size: cover;
+      background-position: center;}
+  
+table,th,td{border: 3px;
+            border-collapse: collapse;
+            border-color:mediumblue;
+            border-style: solid;
+            font-size: 25px;}
+   

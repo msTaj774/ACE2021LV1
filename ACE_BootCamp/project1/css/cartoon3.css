@@ -1,0 +1,12 @@
+div{float: center;
+    color:aliceblue;
+    border:5px black solid;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+    background-color: indianred;
+    padding: 50px;
+    margin: 100px;
+    }
+
+body{background-color:lightcyan;} 

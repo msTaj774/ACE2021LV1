@@ -1,0 +1,16 @@
+body{background-color: azure;}
+
+div{color: darkblue;} 
+
+#h2{color: firebrick;}
+
+button{border-radius: 5px;
+  background-color: darkgray;
+  border: solid 2px;
+  border-color: darkred;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  width: 200px;
+  height: 70px;}
+

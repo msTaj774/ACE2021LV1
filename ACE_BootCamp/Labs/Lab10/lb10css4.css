@@ -1,22 +1,87 @@
-/*The header style*/
+:root {
+  --s1: Lab10.css;
+  --s2: lb10css1.css;
+  --s3: lb10css2.css;
+  --s4: lb10css3.css;
+  
+}
+
+#s1 {link href:vr(--s1);}
+
+/* marging and padding */
+body{margin: 3px ;
+     padding: 10px;
+     overflow: scroll;}
+
+/* Style the header */
+.header{background-color: #f1f1f1;
+        padding: 20px;
+        color: #003;
+        font-style: italic; 
+        font-family:  'Times New Roman', serif;
+        background-image:url("background4.png");
+        height: 200px;}
+  
+
+/* Style the top navigation bar */
+.topnav{overflow: hidden;
+        background-color: #333;}
+
+/*changes link color*/
+.topnav a{float: left;
+          display: block;
+          color: crimson;
+          text-align: center;
+          padding: 10px 15px;}
+  
+
+/*changes roll over color*/
+.topnav a:hover{background-color: #ddd;
+                color: #000;}
+
+/*sub body bg*/
+.row{background-color: navajowhite;}
+
+/* Clear floats after the columns */
+.row:after{content: "";
+           display: table;
+           clear: both;}
+
+/* Create three equal columns that floats next to each other */
+.column{float: left;
+        width: 20.33%;
+        height: 50%;
+        padding: 15px;}
+
+/* Clear floats after the columns */
+.row:after {content: "";
+            display: table;
+            clear: both;}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {width: 100%;}
+}
+
+/*The header style
 h1,h2,h3,h4{text-align: center;
             color: white;}
 
-/*The paragraph style*/
+/*The paragraph style
 p{font-family: cursive;
   font-size: 24px;
   color: darkturquoise;}
 
-/*The body*/
+/*The body
 body{background-image: url(Background_4.JPG);
      background-position: center;}
 
-/*The NavBar*/
+/*The NavBar
 .topnav{overflow: hidden;
         background-color: tan;
         font-size: 18px;}
 
-/**/
+
 .topnav a{float: left;
           display: block;
           color: darkcyan;
@@ -25,15 +90,15 @@ body{background-image: url(Background_4.JPG);
           text-decoration:none;
           margin-left:10px;}
 
-/*while hover*/
+/*while hover
 .topnav a:hover{background-color: silver;
                 color: black;}
   
-/*ul inside the NavBar*/
+/*ul inside the NavBar
 ul{list-style-type:none;
    border:3px white outset;}
 
-/*the button*/
+/*the button
 button{font-size: 20px;
        color: white;
        background-color: black;}

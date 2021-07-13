@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Big Project by Tajbiha</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="imgs/MyFavicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+  <link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+
+<div class="content-wrapper">
+		<img src="imgs/logo.jpg" width="90px" class="logo" alt="logo">
+		<nav>
+			<ul>
+        <li><a onclick="presschenge()" href="#" >Press</a></li>
+				<li><a href="#countryList">Country List</a></li>
+				<li><a href="#contact">Contact</a></li>
+        <script src="js/press-quotes.js"></script>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="hero">
+	<h1>6 Largest Country in the World !</h1>
+</div>
+<main role="main">
+  <div class="content-wrapper">
+    <p id="press-quote">By Area Russia is the largest in the World</p>
+	   <p>There are around 195 countries with billions of populations, size, mass, etc. Some countries have a huge mass of area but perhaps, some just chunk of a whole world. These 195 countries almost have distributed among 5 continents. Our Earth has consisted of 30% on the lithosphere (land area) and 70% on hydrosphere (water). Today we shall discuss the 6 largest countries according to their mass of size in the world. If you’re interested to know more, please <a href="#contact">contact&nbsp;us</a>.</p>
+		<br>
+    <h2>Globe</h2>
+    <figure>
+		<img src="imgs/globe.jpg" alt="Picture">
+		<figcaption>It's Huge!</figcaption>
+		</figure><br>
+		<p>As of March 2020, the population of the world hovered around 7,800,000,000 people and the population reached 7 billion within a span of 200 years. Most of the population is concentrated in the Asian region of the world that does not mean that in the Asia continent there are large countries that can occupy many people. There are many other countries that are vast and here are the top 6 largest countries in the world based on area wise.
+    
+    </p>
+	</div>
+</main>
+<a id="countryList"></a>
+<div class="outer-wrapper">
+	<header class="clearfix">
+		<h1>Search Country</h1>
+		<select id="country-list">
+			<option value="cc">Choose a Country</option>
+			<option value="ru">1.Russia</option>
+			<option value="ca">2.Canada</option>
+			<option value="ch">3.China</option>
+			<option value="us">4.United States</option>
+			<option value="br">5.Brazil</option>
+			<option value="au">6.Australia</option>
+		</select>
+	</header>
+  
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src="imgs/hands.png"  width="220" height="220">
+				<p id="info-name">Country</p>
+			</div>
+		</div>
+		<div class="info-holder">
+      <p><strong>Name: </strong><span id="info-name"></span></p>
+			<p><strong>Area: </strong><span id="info-area"></span></p>
+			<p><strong>Population: </strong><span id="info-population"></span></p>
+      <p><strong>Capital: </strong><span id="info-capital"></span></p>
+      <p><strong>President: </strong><span id="info-president"></span></p>
+			<p><strong>Language: </strong><span id="info-language"></span></p>
+			<p><strong>Literacy rate: </strong><span id="info-literacy"></span></p>
+			
+		</div>
+	</div>
+</div>
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<a id="post-card"></a>
+    <header>
+			<h1>Postcard Generator</h1>
+			<p class="subtitle">Countries</p>
+		</header>
+		<main role="main">
+			<div class="first step">
+				<h2>1. Choose a Country</h2>
+				<select name="country" id="country">
+					<option selected disabled value="empty-country">Countries</option>
+				  <option value="ru">1.Russia</option>
+			    <option value="ca">2.Canada</option>
+			    <option value="ch">3.China</option>
+			    <option value="us">4.United States</option>
+			    <option value="br">5.Brazil</option>
+			    <option value="au">6.Australia</option>
+				</select>
+			</div>
+			<div class="second step">
+				<h2>2. Enjoy Your Postcard!</h2>
+				<div id="postcard">	
+          <p id="greeting">To Generate a Postcard</p>
+				  <p id="country-heading">Choose a Country</p>								
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<script src="js/country-data1.js"></script>
+<script>
+  document.getElementById('country-list').onchange = function() {
+    var selected = this.value;
+		  document.getElementById('info-pic').src= 'imgs/'+ selected +'@2x.jpg';
+      document.getElementById('info-name').textContent = countryData[this.value].name;
+		document.getElementById('info-area').textContent = countryData[this.value].area;
+    document.getElementById('info-population').textContent = countryData[this.value].population;
+    document.getElementById('info-capital').textContent = countryData[this.value].capital;
+    document.getElementById('info-president').textContent = countryData[this.value].president;
+    document.getElementById('info-language').textContent = countryData[this.value].language;
+    document.getElementById('info-literacy').textContent = countryData[this.value].literacy;
+    
+};
+</script>
+<!--<script src="js/change-function-code.js"></script>-->
+<footer>
+	<p>Copyright © ACE Upskilling_ Software Engineering Micro-Credential Boot Camp</p>
+</footer>
+
+
+<a id="contact"></a>
+<div class="container">
+	<h1>If you wish to help this website, contact us.</h1>
+	<p>Thank you so much for Helping! Please fill out the contact form below.</p>
+	<div class="form-container">
+		<form id="vol-form">
+			<div class="form-section">
+				<label for="first-name">First Name:</label>
+				<input id="first-name" name="first-name" type="text">
+			</div>
+			<div class="form-section">
+				<label for="last-name">Last Name:</label>
+				<input id="last-name" name="last-name" type="text">
+			</div>
+			<div class="form-section">
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email">
+			</div>
+			<div class="form-section">
+				<label for="phone">Phone:</label>
+				<input id="phone" name="phone" type="tel">
+			</div>
+			<div class="form-section">
+				<label for="prev-vol">Address:</label>
+				<input id="prev-vol" name="prev-vol" type="text">
+			</div>
+			<div class="form-section">
+				<label for="from-city" class="from-label">City</label>
+				<select id="from-year" name="from-year">
+					<option value="blank"></option>
+					<option value="1">Queens</option>
+					<option value="2">Broklyn</option>
+					<option value="3">Bronx</option>
+					<option value="4">Manhattan</option>
+					<option value="5">Staten Island</option>
+					<option value="6">Long Island</option>
+			</div>
+			<input id="submit" type="submit" value="Submit">      
+		</form>
+	</div>
+</div>
+<footer>
+	<p>Made in NY <br>Copyright © Postcard Generator</p>
+</footer>
+<script src="js/post-card.js"></script>
+<a href="../../portfolioProject.html"><img src="imgs/exit.JPG" width="90px"></a>
+</body>
+</html>

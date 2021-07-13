@@ -2,16 +2,108 @@
 <html>
 
 <head>
+	<title>Lab 10</title>
+  <link rel="icon" type="image/png" href="MyFavicon.png">
+		<div id="sty">
+      <link rel="stylesheet" type="text/css" href="Lab10.css" >
+    </div>
+</head>
 
+<body>
+
+	<div class="header">
+		<h1>MY SUPER DOOPER WEBSITE</h1>
+		<p>SOME OF MY BEST WORK!!!!!!!</p>
+    <button id="ch" onclick="cssChange()"> Click HERE  to Style 1 change</button>
+    <button id="ch1" onclick="cssChange1()"> Click HERE  to Style 2 change</button>
+    <button id="ch0" onclick="cssChange0()"> Click HERE  to Style 3 change</button>
+    <button id="ch3" onclick="cssChange3()"> Click HERE  to Style 4 change</button>
+	</div>
+
+	<div class="topnav">
+		<a href="../Lab7/Lab7byTajbiha.html">Home</a>
+    <a href="../Lab1/lab1byTajbiha.html">Lab 1</a>
+    <a href="../Lab2/Lab2byTajbiha.html">Lab 2</a>
+    <a href="../Lab3/Lab3byTajbiha.html">Lab 3</a>
+    <a href="../Lab4/Lab4byTajbiha.html">Lab 4</a>
+    <a href="../Lab5/Lab5byTajbiha.html">Lab 5</a>
+    <a href="../Lab6/Lab6byTajbiha.html">Lab 6</a>
+    <a href="../Lab8/Lab8byTajbiha.html">Lab 8</a>
+    <a href="../Lab9/Lab9byTajbiha.html">Lab 9</a>
+    <a href="../Lab10/Lab10byTajbiha.html">Lab 10</a>
+	
+  </div>
+
+<div class="row">
+  <div class="column">
+
+    <a href="https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-html/"><h2>HTML</h2></a>
+    <p id="demo">HTML, or Hypertext Markup Language, is a markup language for documents designed to be displayed in a web browser. When used in conjunction with other technologies like CSS and JavaScript, it creates the vast majority of content seen on websites. HTML is used for a huge variety of things on the web, from building complex websites that offer email and calendar functions to constructing a simple course website or resume. We recommend at least a basic understanding of HTML for anyone who wants to publish on the web.</p>
+  </div>
+  
+  <div class="column">
+   <a href="https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-css/"><h2>CSS</h2></a>
+          <p id='a'>Enter Student</p>
+
+<form name="listForm">
+First Name:<input name="fn" type="text"><br>
+Last Name:<input name="ln" type="text"><br>
+Birthday:<input name="bd" type="text"><br>
+Eye Color:<input name="ec" type="text"><br>
+</form>
+
+ 
+ <p id="arrayDemo"></p>
+  </div>
+  
+  <div class="column">
+    <a href="https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/javascript/"><h2>Javascript</h2></a>
+          <p id='pop'>JavaScript is the scripting language of the web. If you have ever wanted to add simple interactivity to web pages beyond links and without complicated server languages you will want to learn JavaScript. It is supported by all modern browsers and is as ubiquitous as HTML and CSS. This tutorial will teach you more about the language and how to use it to create the interactive user experiences that people have come to expect from the modern web.</p>
+    	      <button id="change" onclick="pop()"> Click HERE to see JS in action</button>
+  </div>
+</div>
+
+<script>
+  // this will react to clicking the button
+  function pop(){
+    /*write inside the element
+    pop*/
+document.getElementById('pop').innerHTML= "Hey Tajbiha!! How are you?";}
+
+  
+
+function cssChange(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="lb10css1.css" >';
+}
+ //cssChange is a function that change the stylesheet to lb10css2.css
+ function cssChange1(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="lb10css2.css" >';
+}
+//cssChange is a function that change the stylesheet to lb10css4.css
+ function cssChange3(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="lb10css4.css" >';
+}
+//cssChange is a function that change the stylesheet to lb10css3.css
+function cssChange0(){
+     document.getElementById('sty').innerHTML='<link rel="stylesheet" type="text/css" href="lb10css3.css" >';
+}
+  </script>
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
 	<title>Lab 10</title>
 	<link rel="stylesheet" href="Lab10.css">
   <!--<link rel="stylesheet" href="lb10css1.css">-->
   <!--<link rel="stylesheet" href="lb10css2.css">-->
   <!--<link rel="stylesheet" href="lb10css3.css">-->
   <!--<link rel="stylesheet" href="lb10css4.css">-->
-  <!--<link rel="stylesheet" href="lb10css5.css">-->
+  <!--<link rel="stylesheet" href="lb10css5.css">
 	<link rel="icon" type="image/png" href="MyFavicon.png">
-
 </head>
 
 <body>
@@ -40,13 +132,10 @@
   <button type="button" onclick="myFunction()">Click Me!</button>
   <p id="demo"><b>Fringilla est ullamcorper eget nulla. Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Tortor pretium viverra suspendisse potenti nullam ac tortor. Nisi lacus sed viverra tellus in hac habitasse platea. Dolor sit amet consectetur adipiscing elit duis. Faucibus nisl tincidunt eget nullam non nisi est sit. Ullamcorper a lacus vestibulum sed arcu non odio. Morbi non arcu risus quis varius quam quisque id. Aliquet risus feugiat in ante metus dictum. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Egestas quis ipsum suspendisse ultrices gravida dictum. Leo a diam sollicitudin tempor.</b></p>
 
-
   <script>
     function myFunction()
     {document.getElementById('demo').innerHTML="Hello JavaScript!!";}
   </script>
-
-
 
 </body>
 </html>

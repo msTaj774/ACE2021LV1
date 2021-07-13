@@ -1,0 +1,111 @@
+@charset "UTF-8";
+html {
+	background:url('b.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-a-background-size: cover;
+	background-size: cover;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    background-color:rgba(191, 191, 191,0.4);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2em 2em 4em;
+}
+
+.wrapper {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  color: darkturquoise;
+  width: 32ch;
+  animation: typing 2s steps(32), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+ #logo{border: solid 4px darkturquoise;
+      border-radius: 100px;
+      position:fixed; 
+	    top:0; 
+	    right:0;}
+
+ #mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#home {
+    top: 20px;
+    background-color: darkturquoise;
+}
+
+#about {
+    top: 80px;
+    background-color: darkturquoise;
+}
+
+#labs {
+    top: 140px;
+    background-color: darkturquoise;
+}
+
+#projects {
+    top: 200px;
+    background-color: darkturquoise;
+}
+
+.shadow img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+footer {float: right;
+       position: fixed;
+       bottom:0; 
+       color: darkturquoise;
+       text-align:right;
+}
